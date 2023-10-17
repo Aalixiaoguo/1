@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>教科書情報変更画面</title>
+</head>
+<body>
+    <h2>教科書情報変更画面</h2>
+    <p>管理者：先生１</p>
+    
+    <form action="#" method="post">
+        <label for="stockId">在庫ID:</label>
+        <input type="text" id="stockId" name="stockId" value="在庫ID" disabled><br><br>
+
+        <label for="isbn">ISBN番号:</label>
+        <input type="text" id="isbn" name="isbn" value="ISBN番号" disabled><br><br>
+
+        <label for="title">タイトル:</label>
+        <input type="text" id="title" name="title" value="タイトル" disabled><br><br>
+
+        <label for="category">分類:</label>
+        <input type="text" id="category" name="category" value="分類" disabled><br><br>
+
+        <label for="status">状態:</label>
+        <select id="status" name="status">
+            <option value="新品">新品</option>
+            <option value="中古">中古</option>
+            <option value="未使用">未使用</option>
+        </select><br><br>
+
+        <label for="price">売値:</label>
+        <input type="text" id="price" name="price" value="99999999"><br><br>
+
+        <input type="submit" value="変更" name="modifyBookInfo">
+    </form>
+
+    <br>
+    <a href="login.html">ログアウト</a>
+    <a href="Adminmenu.html">戻る</a>
+</body>
+</html>

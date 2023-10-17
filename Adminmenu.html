@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>管理者メニュー画面</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .menu-container {
+            text-align: right;
+            padding: 10px;
+        }
+        .menu-buttons {
+            display: inline-block;
+            margin-left: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-container">
+        <div class="menu-buttons">
+            <form action="#" method="post">
+                <input type="submit" value="ログアウト" name="logout">
+            </form>
+        </div>
+        <div class="menu-buttons">
+            <form action="#" method="post">
+                <input type="submit" value="管理者情報変更" name="adminInfo">
+            </form>
+        </div>
+        <div class="menu-buttons">
+            <form action="#" method="post">
+                <input type="submit" value="教科書一覧" name="textbookInfo">
+            </form>
+        </div>
+    </div>
+    <h2>管理者メニュー画面</h2>
+    <h1>管理者：先生1</h1>
+    <h3>学生一覧</h3>
+
+
+    <h3>会員情報</h3>
+    <form action="#" method="post">
+        <label for="searchId">ID検索:</label>
+        <input type="text" id="searchId" name="searchId">
+        <input type="submit" value="検索" name="search">
+    </form>
+
+    
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>学籍番号</th>
+            <th>名前</th>
+            <th>住所</th>
+            <th>電話番号</th>
+            <th>メール</th>
+            <th>誕生日</th>
+            <th>入会日</th>
+            <th>退会日</th>
+
+        </tr>
+
+
+        <tr>
+            <td>1</td>
+            <td>RW001</td>
+            <td>学生1</td>
+            <td>~~~</td>
+            <td>123-4567-1234</td>
+            <td>sampl@school.com</td>
+            <td>1999/11/11</td>
+            <td></td>
+            <td></td>
+            <td><input type="submit" value="変更" name="modifyStudent"></td>
+            <td><input type="submit" value="退会" name="withdrawStudent"></td>
+        </tr>
+    </table>
+    
+    <br>
+    <h3>教科書管理メニュー</h3>
+    <form action="#" method="post">
+        <label for="searchTextbookName">名前検索:</label>
+        <input type="text" id="searchTextbookName" name="searchTextbookName">
+        <label for="searchTextbookCategory">カテゴリ検索:</label>
+        <select id="searchTextbookCategory" name="searchTextbookCategory">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+        </select>
+        <input type="submit" value="検索" name="searchTextbook">
+    </form>
+    <table>
+        <tr>
+            <th>在庫ID</th>
+            <th>ISBN番号</th>
+            <th>タイトル</th>
+            <th>分類</th>
+            <th>状態</th>
+            <th>売値</th>
+            <th>在庫</th>
+            <th>備考</th>
+            <th>変更</th>
+            <th>削除</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>3213213219</td>
+            <td>農業概論</td>
+            <td>11</td>
+            <td>中古</td>
+            <td>1</td>
+            <td>◯</td>
+            <td></td>
+            <td><input type="submit" value="変更" name="modifyTextbook"></td>
+            <td><input type="submit" value="削除" name="deleteTextbook"></td>
+        </tr>
+    </table>
+</body>
+</html>

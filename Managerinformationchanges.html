@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>管理者情報変更</title>
+</head>
+<body>
+    <div class="form-container">
+        <h2>管理者情報変更</h2>
+        <form action="#" method="post">
+            <label for="name">名前:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="password">パスワード:</label>
+            <input type="password" id="password" name="password" required><br><br>
+
+            <label for="authority">権限番号:</label>
+            <input type="text" id="authority" name="authority" pattern="^[A-Za-z0-9]+$" required><br><br>
+
+            <input type="submit" value="変更" name="modifyAdminInfo">
+        </form>
+    </div>
+</body>
+</html>
